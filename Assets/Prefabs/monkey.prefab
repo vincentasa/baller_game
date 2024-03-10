@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6005221774462960468}
   - component: {fileID: 2968544209098554309}
   - component: {fileID: 1064140342819434607}
+  - component: {fileID: -6515446355304295966}
   m_Layer: 0
   m_Name: monkey
   m_TagString: Untagged
@@ -148,3 +149,16 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.54
+--- !u!114 &-6515446355304295966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7623462552036272438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7040fa2f86a058940b8f8b532e0dfb60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  replacementPrefab: {fileID: 6879461149712905822, guid: 716c38f41c532ed44b6270c5b2523d4e, type: 3}
