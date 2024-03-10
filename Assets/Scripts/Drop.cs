@@ -8,12 +8,15 @@ public class Drop : MonoBehaviour
     public List<GameObject> items;
     public float dropY;
     public float dropForce;
+    private bool hasInstantiatedItem = false;
 
     public void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0) && !hasInstantiatedItem)
         {
+            SpawnItem();
             DropItem();
+            hasInstantiatedItem = true;
         }
     }
 
@@ -29,8 +32,8 @@ public class Drop : MonoBehaviour
 
     void SpawnItem()
     {
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         int randomItem = Random.Range(0, 5);
-        Instantiate(items[randomItem], new Vector3(0f, dropY, 0f), Quaternion.identity);
-
+        Instantiate(items[randomItem], new Vector3(mousePos.x, dropY, 0f), Quaternion.identity);
     }
 }
