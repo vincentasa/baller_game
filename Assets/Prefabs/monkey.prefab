@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -6515446355304295966}
   m_Layer: 0
   m_Name: monkey
-  m_TagString: Untagged
+  m_TagString: Fruit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -161,4 +161,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7040fa2f86a058940b8f8b532e0dfb60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  replacementPrefab: {fileID: 6879461149712905822, guid: 716c38f41c532ed44b6270c5b2523d4e, type: 3}
+  points: 4
+  nextFruit: {fileID: 6879461149712905822, guid: 716c38f41c532ed44b6270c5b2523d4e, type: 3}
