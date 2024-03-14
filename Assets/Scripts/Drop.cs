@@ -25,8 +25,8 @@ public class Drop : MonoBehaviour
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePos.z = 0;
         transform.position = new Vector3(mousePos.x, dropY, 0);
-        item.constraints = RigidbodyConstraints2D.None;
-        item.gravityScale = 1f;
+        //item.constraints = RigidbodyConstraints2D.None;
+        //item.gravityScale = 1f;
         item.AddForce(Vector2.down * dropForce, ForceMode2D.Impulse);
     }
 
